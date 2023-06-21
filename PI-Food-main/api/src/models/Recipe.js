@@ -5,7 +5,7 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('recipe', {
     id: {
-      type: DataTypes.UUID,
+      type: DataTypes.UUID, //Universally Unique Identifier
       primaryKey: true,
       defaultValue: DataTypes.UUIDV1,
       allowNull: false
@@ -23,7 +23,7 @@ module.exports = (sequelize) => {
       allowNull: false
     },
     healthScore: {
-      type: DataTypes.FLOAT
+      type: DataTypes.FLOAT //Almacena valores numericos con decimales hasta 6 Ej: 3.143456
     },
     steps: {
       type: DataTypes.TEXT
