@@ -1,9 +1,15 @@
+import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
+import Landing from './LandingPage/Landing'
+import Card from './Components/Card/Card';
 
 function App() {
   return (
     <div className="App">
-      <h1>Henry Food</h1>
+      
+      <Route exact path='/' component={Landing} />
+      <Route exact path='/home' component={Card} />
+
     </div>
   );
 }
